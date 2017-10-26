@@ -38,16 +38,10 @@
     </script>
 
     <script id="comment-template" type="text/x-lodash-template">
-      <div class="comment">
-        <div class="comment-body"><%= comment %></div>
-        <div class="commenter">
-          <p>
-            <span class="posted-by">Posted By: </span>
-            <%= commenter %>
-          </p>
-        </div>
-      </div>
-      <div id="footer"></div>
+      <article>
+        <p><%= comment %></p>
+        <footer><%= commenter %></footer>
+      </article
     </script>
 
     <script src="node_modules/lodash/lodash.min.js"></script>
