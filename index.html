@@ -5,9 +5,10 @@
   </head>
   <body>
 
-    <form id="post-form" onsubmit="postComment();return false;">
-      Comment: <input type="textarea" id="commentText"><br>
-      Name: <input type="text" id="commenterName"><br>
+    <form id="post-form" onsubmit="createPost();return false;">
+      Title: <input type="text" id="postTitle"><br>
+      Post: <input type="textarea" id="postBody"><br>
+      Author: <input type="text" id="postAuthor"><br>
       <input type="submit">
     </form>
 
