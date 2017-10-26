@@ -13,7 +13,7 @@ function createPost(){
     'postTitle': postTitle,
     'postBody': postBody,
     'postAuthor': postAuthor
-  })
+  });
 
   postDiv.innerHTML += postHTML;
   postDiv.getElementsByTagName("footer")[0].innerHTML = commentsTemplate();
@@ -26,7 +26,7 @@ function postComment(){
   let commentHTML = commentTemplate({
     'comment': comment,
     'commenter': commenter
-  })
+  });
   let commentsDiv = document.getElementById("comments");
 
   commentsDiv.innerHTML += commentHTML;
